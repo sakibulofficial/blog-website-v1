@@ -7,7 +7,12 @@
     
     <h1><%= post[i].title %></h1>
 
-    <p><%= post[i].content %></p>
+    <%  var postD = post[i].content ; %>
+
+    <% var postshort = postD.substring(0, 100); %>
+
+    <p><%= postshort %> <a href="/post/<%= post[i].title  %>">read more</a></p>
+
     
 
 <% } %> 
