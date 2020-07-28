@@ -5,13 +5,14 @@
 
 <% for (let i = 0; i < post.length; i++) { %>
     
-    <h1><%= post[i].title %></h1>
+    <h1><%= post[i].postTitle %></h1>
 
-    <%  var postD = post[i].content ; %>
+    <%  var postD = post[i].description ; %>
 
     <% var postshort = postD.substring(0, 100); %>
 
-    <p><%= postshort %> <a href="/post/<%= post[i].title  %>">read more</a></p>
+    <p><%= postshort %> <a href="/post/<%= post[i]._id  %>">read more</a></p>
+    
 
     
 
